@@ -9,6 +9,8 @@ var produtosRouter = require("./routes/produtos");
 var userRouter = require("./routes/users")
 var carroCompras = require("./routes/carrinhos")
 var app = express();
+var cors = require('cors')
+app.use(cors())
 
 const db = require('./db')
 db.main()
